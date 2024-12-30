@@ -20,3 +20,16 @@ do{
     c++;
 }
 while(c<=10)
+
+//for each
+array = [10,20,30]
+array.forEach(element => {
+    console.log(element)
+    
+});
+
+let array1 = [10,20,30]
+array1.forEach((ele,index) => {
+    console.log(ele,index)
+    
+});
