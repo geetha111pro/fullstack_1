@@ -1,0 +1,22 @@
+ul,li{
+    display: flex;
+    padding: 10px;
+    margin: 0;
+    justify-content:right;
+    padding: 10px;
+    text-decoration: none;
+    list-style-type: none;
+    background-color: #001A6E;
+    color: white !important;
+    
+}
+li{
+    cursor: pointer;
+    padding: 3px;
+    margin: 0 20px;
+}
+li:hover{
+    background-color: #074799;
+    border-radius: 10%;
+
+}
