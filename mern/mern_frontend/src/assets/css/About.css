@@ -3,7 +3,7 @@
     text-decoration:underline dotted black;
 }
 
-h2::before{
+/*h2::before{
     content: '•';
     margin-right: 10px;
     color: #009990;

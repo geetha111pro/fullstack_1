@@ -9,8 +9,15 @@ const Navbar = () => {
         <ul>
         <li><Link to="/" style={{ color: 'white', textDecoration: 'none' }}>HOME</Link></li>
         <li><Link to="/about" style={{ color: 'white', textDecoration: 'none' }}>ABOUT</Link></li>
+        <li><Link to="/useref" style={{ color: 'white', textDecoration: 'none' }}>USEREF</Link></li>
         <li><Link to="/contact" style={{ color: 'white', textDecoration: 'none' }}>CONTACT</Link></li>
         <li><Link to="/Gallery" style={{ color: 'white', textDecoration: 'none' }}>GALLERY</Link></li>
+        <li><Link to="/useEffect" style={{ color: 'white', textDecoration: 'none' }}>USESTATE</Link></li>
+        <li><Link to="/useContext" style={{ color: 'white', textDecoration: 'none' }}>USECONTEXT</Link></li>
+        <li><Link to="/useRefTask" style={{ color: 'white', textDecoration: 'none' }}>USEREF_TASK</Link></li>
+
+
+
         </ul>
       </div>
     </header>
