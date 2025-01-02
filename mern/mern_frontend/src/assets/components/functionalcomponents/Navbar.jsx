@@ -1,4 +1,4 @@
-import '../../../assets/css/Navbar.css';
+import '../../css/Navbar.css';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -15,6 +15,9 @@ const Navbar = () => {
         <li><Link to="/useEffect" style={{ color: 'white', textDecoration: 'none' }}>USESTATE</Link></li>
         <li><Link to="/useContext" style={{ color: 'white', textDecoration: 'none' }}>USECONTEXT</Link></li>
         <li><Link to="/useRefTask" style={{ color: 'white', textDecoration: 'none' }}>USEREF_TASK</Link></li>
+        <li><Link to="/slowfunction" style={{ color: 'white', textDecoration: 'none' }}>USEMEMO</Link></li>
+        <li><Link to="/task" style={{ color: 'white', textDecoration: 'none' }}>DAY6_TASK</Link></li>
+
 
 
 

@@ -10,6 +10,8 @@ import UseRef from './assets/components/functionalcomponents/useRef';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ExamResults from './assets/components/functionalcomponents/useContext';
 import UseRefno from './assets/components/functionalcomponents/UseRefnoo';
+import UseMemo from './assets/components/functionalcomponents/Slowfunction';
+import DatabaseTask from './assets/components/functionalcomponents/TaskDay6';
 function App() {
   return (
     <div>
@@ -24,6 +26,8 @@ function App() {
           <Route path="/useEffect"element={<UseEffect/>}/>
           <Route path="/useContext"element={<ExamResults/>}/>
           <Route path="/useRefTask"element={<UseRefno/>}/>
+          <Route path="/slowfunction"element={<UseMemo/>}/>
+          <Route path="/task"element={<DatabaseTask/>}/>
           </Routes>
         
           </BrowserRouter>
