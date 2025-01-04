@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+
+<body>
+    <form id="loginForm">
+        <label>Email: <input type="email" id="email" required /></label><br>
+        <label>Password: <input type="password" id="password" required /></label><br>
+        <button type="submit">Login</button>
+    </form>
+    <script>
+    app.post('/login', async (req, res) => {
+    const { email, password } = req.body;
+    try {
+        const existingUser = await User.findOne({ email });
+        if (!existingUser) {
+            return res.status(404).json({ message: "User not found" });
+        }
+
+        // Compare hashed passwords
+        const isPasswordCorrect = await bcrypt.compare(password, existingUser.password);
+        if (!isPasswordCorrect) {
+            return res.status(401).json({ message: "Invalid credentials" });
+        }
+
+        res.json({ message: "Login successful" });
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ message: "Server error" });
+    }
+});
+
+</script>
+    
+</body>
+
+</html>
