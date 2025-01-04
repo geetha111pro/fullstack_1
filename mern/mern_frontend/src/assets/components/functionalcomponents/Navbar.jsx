@@ -17,10 +17,8 @@ const Navbar = () => {
         <li><Link to="/useRefTask" style={{ color: 'white', textDecoration: 'none' }}>USEREF_TASK</Link></li>
         <li><Link to="/slowfunction" style={{ color: 'white', textDecoration: 'none' }}>USEMEMO</Link></li>
         <li><Link to="/task" style={{ color: 'white', textDecoration: 'none' }}>DAY6_TASK</Link></li>
-
-
-
-
+        <li><Link to="/login" style={{ color: 'white', textDecoration: 'none' }}>LOGIN</Link></li>
+        <li><Link to="/signup" style={{ color: 'white', textDecoration: 'none' }}>SIGNUP</Link></li>
         </ul>
       </div>
     </header>

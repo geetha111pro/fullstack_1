@@ -12,6 +12,8 @@ import ExamResults from './assets/components/functionalcomponents/useContext';
 import UseRefno from './assets/components/functionalcomponents/UseRefnoo';
 import UseMemo from './assets/components/functionalcomponents/Slowfunction';
 import DatabaseTask from './assets/components/functionalcomponents/TaskDay6';
+import Login from './assets/components/functionalcomponents/Login page';
+import Signup from './assets/components/functionalcomponents/Sign up';
 function App() {
   return (
     <div>
@@ -28,6 +30,8 @@ function App() {
           <Route path="/useRefTask"element={<UseRefno/>}/>
           <Route path="/slowfunction"element={<UseMemo/>}/>
           <Route path="/task"element={<DatabaseTask/>}/>
+          <Route path="/login"element={<Login/>}/>
+          <Route path="/signup"element={<Signup/>}/>
           </Routes>
         
           </BrowserRouter>
