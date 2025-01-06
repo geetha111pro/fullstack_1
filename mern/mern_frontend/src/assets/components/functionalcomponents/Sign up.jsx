@@ -12,7 +12,7 @@ const Signup = () => {
     const signUp = async (e) => {
         e.preventDefault();
     
-    const req = await axios.post('http://localhost:3001/signup', {
+    const req = await axios.post('https://fullstack-1-lfyl.onrender.com', {
                 firstName: firstname,
                 lastName: lastname,
                 email: email,
